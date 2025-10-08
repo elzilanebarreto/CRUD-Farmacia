@@ -8,5 +8,9 @@ export class Categoria {
 
   @IsNotEmpty()
   @Column({ length: 255, nullable: false })
+  nome: string;
+
+  @IsNotEmpty()
+  @Column({ length: 255, nullable: false })
   descricao: string;
 }
